@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Zip to PDF Converter</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; flex-direction: column; align-items: center; padding: 50px; background-color: #f4f4f9; }
+        .container { background: white; border: 2px solid #ddd; padding: 30px; border-radius: 12px; shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
+        input { margin: 20px 0; }
+        button { padding: 12px 24px; cursor: pointer; background: #28a745; color: white; border: none; border-radius: 5px; font-weight: bold; }
+        button:hover { background: #218838; }
+        #status { margin-top: 15px; color: #555; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Advanced Converter</h2>
+        <p>Convert ZIP (Images & PDFs) to one PDF</p>
+        <input type="file" id="zipInput" accept=".zip">
+        <br>
+        <button onclick="processZip()">Convert to rahulshrivastav.pdf</button>
+        <p id="status"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
